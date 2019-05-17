@@ -1,0 +1,123 @@
+Cmp-Mod V01 Created by PcbNew   date = Sat May 18 00:20:33 2019
+
+BeginCmp
+TimeStamp = 5CDF2DC0
+Path = /5CDEC59B
+Reference = U1;
+ValeurCmp = MP1584;
+IdModule  = footprint-lib:MP1584,SOIC-8_3.9x4.9mm_P1.27mm,thermal_via;
+EndCmp
+
+BeginCmp
+TimeStamp = 5CDF2BA3
+Path = /5CDF1242
+Reference = L1;
+ValeurCmp = L_15uH;
+IdModule  = w_smd_inductors:inductor_smd_6.8x3.8mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5CDF2C09
+Path = /5CDEFCDC
+Reference = R6;
+ValeurCmp = R104,0603;
+IdModule  = Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5CDF421F
+Path = /5CDF3426
+Reference = R5;
+ValeurCmp = R433,0603;
+IdModule  = Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5CDF2BE7
+Path = /5CDEE30C
+Reference = R4;
+ValeurCmp = R104,0603;
+IdModule  = Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5CDF2BD6
+Path = /5CDEEA14
+Reference = R3;
+ValeurCmp = R240,0603;
+IdModule  = Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5CDF2BC5
+Path = /5CDF2C94
+Reference = R2;
+ValeurCmp = R224,0603;
+IdModule  = Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5CDF2BB4
+Path = /5CDEDCCB
+Reference = R1;
+ValeurCmp = R104,0603;
+IdModule  = Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5CDED943
+Path = /5CE0F530
+Reference = J1;
+ValeurCmp = Conn_01x03_Female;
+IdModule  = Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5CDF2B75
+Path = /5CDF092A
+Reference = D1;
+ValeurCmp = SD_1N5822_SS34;
+IdModule  = w_smd_diode:do214aa;
+EndCmp
+
+BeginCmp
+TimeStamp = 5CDF2B65
+Path = /5CDED5E2
+Reference = C5;
+ValeurCmp = C106,0805;
+IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5CDF2B54
+Path = /5CDED279
+Reference = C4;
+ValeurCmp = C106,0805;
+IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5CDF2B43
+Path = /5CDEF999
+Reference = C3;
+ValeurCmp = C151,0603;
+IdModule  = Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5CDF40A0
+Path = /5CDED021
+Reference = C2;
+ValeurCmp = C106,0805;
+IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5CDF2B21
+Path = /5CDF0453
+Reference = C1;
+ValeurCmp = C104,0603;
+IdModule  = Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder;
+EndCmp
+
+EndListe

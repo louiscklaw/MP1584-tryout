@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:MP1584-tryout-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1153,7 +1154,7 @@ U 1 1 5CDEC59B
 P 5800 3350
 F 0 "U1" H 5800 4050 50  0000 C CNN
 F 1 "MP1584" H 5800 3950 50  0000 C CNN
-F 2 "footprint-lib:MP2303,SOIC-8_3.9x4.9mm_P1.27mm,thermal_via" H 5800 2500 50  0001 C CNN
+F 2 "footprint-lib:MP1584,SOIC-8_3.9x4.9mm_P1.27mm,thermal_via" H 5800 2500 50  0001 C CNN
 F 3 "" H 5800 3350 50  0001 C CNN
 	1    5800 3350
 	1    0    0    -1  
@@ -1274,7 +1275,7 @@ U 1 1 5CDF1242
 P 7550 3200
 F 0 "L1" V 7750 3200 50  0000 C CNN
 F 1 "L_15uH" V 7650 3200 50  0000 C CNN
-F 2 "footprint-lib:L_SMD_ALL" H 7550 3200 50  0001 C CNN
+F 2 "w_smd_inductors:inductor_smd_6.8x3.8mm" H 7550 3200 50  0001 C CNN
 F 3 "test_datasheet" H 7550 3200 50  0001 C CNN
 	1    7550 3200
 	0    -1   -1   0   
