@@ -5,24 +5,24 @@
   )
   (autoroute_settings
     (fanout off)
-    (autoroute on)
+    (eu.mihosoft.freerouting.autoroute on)
     (postroute on)
     (vias on)
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 81)
+    (start_pass_no 8434)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 2.9)
+      (against_preferred_direction_trace_costs 2.0)
     )
     (layer_rule B.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 1.5)
+      (against_preferred_direction_trace_costs 2.0)
     )
   )
   (rule
@@ -40,17 +40,41 @@
     )
     (attach off)
   )
+  (padstack "Via[0-1]_2000:1000_um"
+    (shape
+      (circle F.Cu 2000.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 2000.0 0.0 0.0)
+    )
+    (attach off)
+  )
   (via 
     "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
   )
   (via 
+    "Via[0-1]_2000:1000_um" "Via[0-1]_2000:1000_um" default
+  )
+  (via 
     "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_2000:1000_um-kicad_default" "Via[0-1]_2000:1000_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-CURRENT_1A" "Via[0-1]_800:400_um" "CURRENT_1A"
+  )
+  (via 
+    "Via[0-1]_2000:1000_um-CURRENT_1A" "Via[0-1]_2000:1000_um" "CURRENT_1A"
   )
   (via_rule
     default "Via[0-1]_800:400_um"
   )
   (via_rule
     "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    "CURRENT_1A" "Via[0-1]_2000:1000_um-CURRENT_1A"
   )
   (class default
     (clearance_class default)
@@ -63,12 +87,22 @@
     )
   )
   (class "kicad_default"
-    "Net-(C1-Pad2)" "Net-(C1-Pad1)" GND "Net-(C2-Pad1)" "Net-(C3-Pad2)" "Net-(C3-Pad1)" +5V "Net-(R1-Pad2)"
-    "Net-(R2-Pad2)" "Net-(R4-Pad1)"
+    "Net-(C1-Pad2)" "Net-(C2-Pad1)" "Net-(C3-Pad2)" "Net-(C3-Pad1)" "Net-(R1-Pad2)" "Net-(R2-Pad2)" "Net-(R4-Pad1)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
       (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "CURRENT_1A"
+    GND +5V "/SW_OUT"
+    (clearance_class "CURRENT_1A")
+    (via_rule CURRENT_1A)
+    (rule
+      (width 3000.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
